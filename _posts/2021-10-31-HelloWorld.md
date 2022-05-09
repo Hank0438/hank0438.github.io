@@ -1,6 +1,24 @@
-# Hello
+# Windows Binary Exploit Part1 - Process Loader
+In Windows, the executable file is called PE.
 
-## World
-* a
-* b
-* c
+### PE format
+PE is consist of PE header, NT header and several sections.
+
+
+### Process Loader
+In this section, I will try to explain how Windows's process loader load from a PE to a process.
+
+In the Windows' bible, Windows Internals wrote by Alex, it ellaborates that the process loader will try to do the following things:
+* Map PE file to virtual memory
+* Initialize process structure in both Ring0 (EPROCESS) and Ring3 (PEB)
+* Insert thread
+* Start the thread
+
+To verify the above descriptions, I reverse-engineer the ntoskrnl.exe in Windows 11, and try to identify each steps:
+
+### Protection
+* ASLR
+* CFG
+* safe-SEH
+* DEP
+
