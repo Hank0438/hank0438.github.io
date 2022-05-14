@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windows ETW"
+title: "Event Tracing for Windows"
 categories: pwn, reverse, windows
 published: false
 ---
