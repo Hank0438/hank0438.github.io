@@ -1,6 +1,6 @@
 title: Hank Chen's Blog
 author:
-  name: hank0438
+  name: hank_chen
   email: hank0438@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
   Just try to note something interesting about cybersecuriry. If you want to discuss further about my post, feel free to contact me via email.
@@ -47,8 +47,8 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+header_pages:
+- about.md
 
 # Build settings
 theme: minima
